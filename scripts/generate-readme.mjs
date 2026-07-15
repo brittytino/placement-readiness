@@ -26,10 +26,10 @@ function readJSON(relPath) {
 }
 
 // ── Load data ────────────────────────────────────────────────────────────────
-const roster     = readJSON('students/roster.json');
-const scoreboard = readJSON('scoreboard.json');
-const attendance = readJSON('attendance.json');
-const teams      = readJSON('teams.json');
+const roster     = readJSON('data/roster.json');
+const scoreboard = readJSON('data/scoreboard.json');
+const attendance = readJSON('data/attendance.json');
+const teams      = readJSON('data/teams.json');
 
 if (!roster || !scoreboard || !attendance || !teams) {
   console.error('❌ Missing one or more JSON files. Run recalculate-scores.mjs first.');

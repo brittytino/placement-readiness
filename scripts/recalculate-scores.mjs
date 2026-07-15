@@ -67,11 +67,11 @@ function documentationScore(readmePath) {
 
 // ── Load data ────────────────────────────────────────────────────────────────
 
-const roster = readJSON('students/roster.json');
-if (!roster) { console.error('❌ students/roster.json not found'); process.exit(1); }
+const roster = readJSON('data/roster.json');
+if (!roster) { console.error('❌ data/roster.json not found'); process.exit(1); }
 
-const existingScoreboard = readJSON('scoreboard.json') ?? {};
-const existingTeams = readJSON('teams.json') ?? {};
+const existingScoreboard = readJSON('data/scoreboard.json') ?? {};
+const existingTeams = readJSON('data/teams.json') ?? {};
 
 // ── Discover which activities/ folders exist ─────────────────────────────────
 
@@ -97,7 +97,7 @@ for (const roll of Object.keys(roster)) {
   for (const day of days) {
     const existing = existingScoreboard[roll]?.byDay?.[day]; // check if manual-present override
     // If previously manual-present, preserve it
-    const wasManual = readJSON('attendance.json')?.[roll]?.[day] === 'manual-present';
+    const wasManual = readJSON('data/attendance.json')?.[roll]?.[day] === 'manual-present';
     if (wasManual) {
       attendance[roll][day] = 'manual-present';
     } else {
@@ -106,7 +106,7 @@ for (const roll of Object.keys(roster)) {
   }
 }
 
-writeJSON('attendance.json', attendance);
+writeJSON('data/attendance.json', attendance);
 
 // ── Recompute scoreboard.json ─────────────────────────────────────────────────
 
@@ -147,7 +147,7 @@ for (const roll of Object.keys(roster)) {
   scoreboard[roll] = { total, byDay, manualAdjustments };
 }
 
-writeJSON('scoreboard.json', scoreboard);
+writeJSON('data/scoreboard.json', scoreboard);
 
 // ── Recompute teams.json rollups ──────────────────────────────────────────────
 
@@ -184,7 +184,7 @@ for (const [teamId, teamData] of Object.entries(existingTeams)) {
   };
 }
 
-writeJSON('teams.json', teams);
+writeJSON('data/teams.json', teams);
 
 // ── Summary ───────────────────────────────────────────────────────────────────
 const sorted = Object.entries(scoreboard).sort(([, a], [, b]) => b.total - a.total);

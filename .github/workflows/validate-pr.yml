@@ -47,7 +47,7 @@ jobs:
           
           # Find the roll number whose github field matches this login
           ROLL=$(node -e "
-            const roster = JSON.parse(require('fs').readFileSync('students/roster.json','utf8'));
+            const roster = JSON.parse(require('fs').readFileSync('data/roster.json','utf8'));
             const login = '$GITHUB_LOGIN'.toLowerCase();
             const entry = Object.entries(roster).find(([, v]) => v.github.toLowerCase() === login);
             if (!entry) { console.error('GitHub login not found in roster.json:', login); process.exit(1); }

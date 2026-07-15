@@ -37,19 +37,19 @@ async function fetchJSON<T>(filePath: string): Promise<T> {
 // ── Base data loaders ─────────────────────────────────────────────────────────
 
 export async function getRoster(): Promise<Roster> {
-  return fetchJSON<Roster>('students/roster.json')
+  return fetchJSON<Roster>('data/roster.json')
 }
 
 export async function getScoreboard(): Promise<Scoreboard> {
-  return fetchJSON<Scoreboard>('scoreboard.json')
+  return fetchJSON<Scoreboard>('data/scoreboard.json')
 }
 
 export async function getAttendance(): Promise<Attendance> {
-  return fetchJSON<Attendance>('attendance.json')
+  return fetchJSON<Attendance>('data/attendance.json')
 }
 
 export async function getTeams(): Promise<Teams> {
-  return fetchJSON<Teams>('teams.json')
+  return fetchJSON<Teams>('data/teams.json')
 }
 
 // ── Derived helpers ───────────────────────────────────────────────────────────

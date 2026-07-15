@@ -44,14 +44,14 @@ const changedFiles = changedFilesRaw.split(',').map(f => f.trim()).filter(Boolea
 // ── Load roster ─────────────────────────────────────────────────────────────
 let roster = {};
 try {
-  roster = JSON.parse(readFileSync(resolve(ROOT, 'students/roster.json'), 'utf8'));
+  roster = JSON.parse(readFileSync(resolve(ROOT, 'data/roster.json'), 'utf8'));
 } catch {
-  console.error('❌ Could not read students/roster.json — is the repo structure intact?');
+  console.error('❌ Could not read data/roster.json — is the repo structure intact?');
   process.exit(1);
 }
 
 if (!roster[authorRoll]) {
-  console.error(`❌ Roll number "${authorRoll}" not found in students/roster.json`);
+  console.error(`❌ Roll number "${authorRoll}" not found in data/roster.json`);
   process.exit(1);
 }
 

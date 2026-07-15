@@ -1,5 +1,8 @@
 # Placement Readiness Portal
 
+> **GitHub Description:** A fully transparent, GitHub-driven leaderboard and submission portal for the 25MX Cohort (MCA Department, PSG College of Technology). No database, no logins.
+> **GitHub Topics:** `nextjs`, `tailwindcss`, `github-actions`, `education`, `leaderboard`, `markdown-driven`, `placement-readiness`
+
 **25MX Cohort — MCA Department, PSG College of Technology**  
 *Placement Rep: Tino Britty J*
 
@@ -8,7 +11,7 @@ A fully transparent, GitHub-driven leaderboard and submission portal. No databas
 
 📊 **Live Site:** [placement-readiness.vercel.app](https://placement-readiness.vercel.app)  
 📖 **How to contribute:** [HOW_TO_CONTRIBUTE.md](./HOW_TO_CONTRIBUTE.md)  
-👤 **Owner guide:** [OWNER_GUIDE.md](./OWNER_GUIDE.md)
+👤 **Owner guide:** [OWNER_GUIDE.md](./docs/OWNER_GUIDE.md)
 
 ---
 
@@ -34,23 +37,36 @@ A fully transparent, GitHub-driven leaderboard and submission portal. No databas
 
 ---
 
-## Repository structure
+## Repository Structure
 
 ```
 placement-readiness/
-├── students/roster.json          ← master student list
-├── scoreboard.json               ← all scores (source of truth)
-├── attendance.json               ← per-day attendance
-├── teams.json                    ← team roster + rollups
-├── activities/2026-07-10..2026-07-14/      ← one folder per student per day
+├── app/                          ← Next.js 14 App Router routes (deployed to Vercel)
+├── components/                   ← React UI components
+├── lib/                          ← Data loading logic (data.ts)
+├── activities/                   ← One folder per day, containing student submissions
+├── data/                         ← The single source of truth for the portal
+│   ├── roster.json               ← Master student list
+│   ├── scoreboard.json           ← All student scores
+│   ├── attendance.json           ← Per-day attendance
+│   └── teams.json                ← Team roster + rollups
+├── docs/                         ← Documentation and guides
 ├── scripts/                      ← Node scripts run by GitHub Actions
-├── .github/workflows/            ← validate-pr.yml, on-merge.yml
-└── website/                      ← Next.js 14 app (deployed to Vercel)
+└── .github/workflows/            ← validate-pr.yml, on-merge.yml
 ```
 
 ---
 
-## Quick links
+## Local Development
+
+If you want to run the portal locally:
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Run the development server: `npm run dev`
+4. Open [http://localhost:3000](http://localhost:3000)
+
+## Quick Links
 
 - 🔴 **Students who haven't submitted today** — check the [live dashboard](https://placement-readiness.vercel.app)
 - 📋 [Full Leaderboard](https://placement-readiness.vercel.app/leaderboard)
