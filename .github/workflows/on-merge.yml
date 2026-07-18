@@ -46,8 +46,8 @@ jobs:
       # ── Step 3: Commit the updated JSON + README back to main ─────────────────
       - name: Commit regenerated files
         run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name  "Score Tracker"
+          git config user.email "score-tracker@placement.local"
           
           git add data/scoreboard.json data/attendance.json data/teams.json README.md
           
