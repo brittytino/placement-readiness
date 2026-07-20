@@ -1,22 +1,29 @@
-# Reflection
+# AI Prompts Used
 
-## What I Learned
+## Prompt 1
 
-This project helped me understand the internal working of the K-Means clustering algorithm instead of relying on machine learning libraries.
+Explain the K-Means clustering algorithm step-by-step.
 
-I learned how centroid initialization, Euclidean distance calculation, and iterative optimization contribute to forming meaningful clusters.
+---
 
-## Challenges
+## Prompt 2
 
-The main challenge was updating centroids correctly and handling convergence conditions.
+Write a Python implementation of K-Means without using Scikit-learn.
 
-Another challenge was ensuring the implementation worked without using Scikit-learn.
+---
 
-## Improvements
+## Prompt 3
 
-Future versions could include:
+Explain the time complexity of K-Means.
 
-- K-Means++
-- Automatic K selection
-- Better visualization
-- Large dataset support
+---
+
+## Prompt 4
+
+Generate a README for a machine learning clustering project.
+
+---
+
+## Prompt 5
+
+Explain the architectural design and trade-offs of K-Means.
