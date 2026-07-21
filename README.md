@@ -22,7 +22,7 @@ A fully transparent, GitHub-driven leaderboard and submission portal. No databas
 <!-- LEADERBOARD:START -->
 | Rank | Student | Roll No | Score | Attendance |
 |------|---------|---------|-------|-----------|
-| 🥇 1 | SABARISH P | 25mx343 | 75 | 3/3 (100%) |
+| 🥇 1 | SABARISH P | 25mx343 | 80 | 3/3 (100%) |
 | 🥈 2 | Keerthanaa J | 25mx323 | 50 | 2/3 (67%) |
 | 🥉 3 | R.G.A.Sakthivel Mallaiah | 25mx217 | 50 | 2/3 (67%) |
 | 4 | KASBIYA M | 25mx322 | 50 | 2/3 (67%) |
