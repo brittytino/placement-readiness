@@ -21648,7 +21648,7 @@
     "manualAdjustments": null
   },
   "25mx343": {
-    "total": 50,
+    "total": 75,
     "byDay": {
       "2026-07-16": {
         "submitted": 10,
@@ -21665,10 +21665,10 @@
         "documentation": 5
       },
       "2026-07-20": {
-        "submitted": 0,
-        "quality": 0,
-        "reflection": 0,
-        "prompting": 0,
+        "submitted": 10,
+        "quality": 5,
+        "reflection": 5,
+        "prompting": 5,
         "documentation": 0
       },
       "2026-07-21": {
