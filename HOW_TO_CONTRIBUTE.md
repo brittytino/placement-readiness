@@ -17,7 +17,7 @@ The "Placement Readiness" repository belongs to your placement representative. Y
 ### 1. Fork the repo
 
 1. Open a browser and go to: `https://github.com/brittytino/placement-readiness`
-2. In the top-right corner of the page, click the **"Fork"** button. (It looks like a split arrow with a number next to it.)
+2. In the top-right corner of the page, click the **"Fork"** button. (It looks like a split arrow with a number next to it.).....
 3. On the next page, leave all defaults as-is and click **"Create fork"**.
 4. GitHub will take you to `https://github.com/YOUR-USERNAME/placement-readiness`. This is now YOUR copy.
 
