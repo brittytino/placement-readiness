@@ -212,10 +212,10 @@ export const MISSIONS_DATA: Mission[] = [
     "title": "Technical Challenge - Caterpillar Hackathon",
     "desc": "A data-driven task focusing on machine learning, data processing pipelines, or analytics visualization.",
     "tasks": [
-      "Pre-process and clean the provided dataset to ensure data integrity.",
-      "Develop a predictive model, AI algorithm, or analytics dashboard.",
-      "Evaluate the model's accuracy, performance, or data processing speed.",
-      "Document your methodology, results, and insights in the README.md."
+      "Build an interactive dashboard for equipment monitoring and rental management.",
+      "Implement equipment check-in/check-out and usage tracking.",
+      "Provide demand forecasting and anomaly detection features.",
+      "Document the system architecture, design decisions, API endpoints, and Big-O complexity analysis in the README.md."
     ],
     "deliverables": [
       "README.md",
@@ -226,7 +226,7 @@ export const MISSIONS_DATA: Mission[] = [
       "diagram.png",
       "code/"
     ],
-    "guide": "### Problem Statement: Technical Challenge - Caterpillar Hackathon\n\n**Scenario:** You are an engineer at Caterpillar Hackathon. \n\n**Your Task:**\nBuild a sentiment analysis API. Integrate with a lightweight NLP library (or use an LLM API). Receive a batch array of 50 customer reviews in a single POST request, process them asynchronously, and return a grouped JSON object categorizing them into Positive, Neutral, and Negative.\n\n**Deliverables:** Implement the solution in code, and explain your architectural design and Big-O trade-offs in your `README.md`."
+    "guide": "### Problem Statement: Technical Challenge - Intelligent Equipment Rental Management Platform\n\n**Scenario:**\nYou are an engineer participating in the Heavy Equipment Innovation Challenge.\n\nCompanies in construction, mining, and infrastructure projects frequently lease heavy machinery from rental providers. Managing these assets manually often results in poor visibility of equipment location, inefficient utilization, delayed returns, and increased rental expenses. Your goal is to build a smart digital solution that helps businesses efficiently monitor, manage, and optimize their rented equipment throughout its rental lifecycle.\n\n**Your Task:**\nDevelop an Intelligent Equipment Rental Management Platform that enables organizations to:\n- Monitor rented equipment in near real time.\n- Manage equipment check-in and check-out operations.\n- Record equipment usage, operating hours, and site information.\n- Generate utilization insights and rental summaries.\n- Send alerts for upcoming or overdue returns.\n- Forecast future equipment demand using historical rental data.\n- Detect underutilized or unassigned assets to improve operational efficiency.\n\n**Deliverables:**\n- Implement the complete solution in code.\n- Build an interactive dashboard for equipment monitoring and rental management.\n- Implement equipment check-in/check-out and usage tracking.\n- Provide demand forecasting and anomaly detection features.\n- Document the system architecture, design decisions, API endpoints, and Big-O complexity analysis in the README.md."
   },
   {
     "date": "2026-07-27",
